@@ -377,8 +377,7 @@ const getMeetingMins = async (transcriptionText) => {
 };
 
 const response = async (promptText) => {
-  //const API_KEY = process.env.API_KEY;
-  const API_KEY = "AIzaSyBHQjmmVMY1SlRTYKEjzQb9FtNdhdIPcPg";
+  const API_KEY = process.env.API_KEY;
   
   if (!API_KEY) {
     throw new Error("API_KEY not found in environment variables");
